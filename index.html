@@ -4,66 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="static/css/styles.css">
-    <!-- Font Awesome for icons (optional) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Punit Shah</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Punit Shah</h1>
-            </div>
-            <div class="nav-container">
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about/index.html">About</a></li>
-                        <li><a href="projects/index.html">Portfolio</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <img class="logo" src="PunitShah.png" alt="Logo" />
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <section class="hero">
-            <div class="profile-content">
-                <img src="static/img/profile.jpg" alt="Profile Picture" class="profile-pic">
-                <p class="profile-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non augue a velit facilisis aliquet a a felis. Fusce tristique tellus quis ligula malesuada ullamcorper. Nullam sed nulla libero. Nam ullamcorper tempor feugiat. Fusce condimentum efficitur auctor. Ut nibh urna, congue et maximus a, tincidunt ut sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vel pharetra nunc, vel aliquet libero. Maecenas sit amet eros eget justo facilisis fringilla non vel quam. Curabitur at risus non dolor laoreet volutpat dictum sit amet libero. Mauris nec suscipit velit. Curabitur hendrerit sapien purus, eu hendrerit ipsum porttitor vel. Aenean enim ligula, tristique quis vulputate a, pellentesque sed odio. Ut et nisl facilisis, rutrum leo ut, consectetur arcu. Aliquam erat volutpat. In vitae accumsan eros.
-                </p>
-            </div>
+    <section class="hero">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="intro-text">
+            <h1>Punit Shah</h1>
+            <h4 class="dynamic-intro">
+                - <span class="dynamic-text" id="dynamic-text"></span>
+            </h4>
+            <h4 class="designation">Business Intelligence Engineer with 4+ years of experience in Tech, <br>Product management, Supply chain Analysis and Big data.</h4>
         </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section social-links">
-                    <h2>Follow Me</h2>
-                    <div class="social-icons">
-                        <a href="https://github.com/your-profile" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://instagram.com/your-profile" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://substack.com/profile" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
-                        <a href="https://medium.com/@your-profile" class="social-icon" target="_blank"><i class="fab fa-medium"></i></a>
-                        <a href="https://www.linkedin.com/in/your-profile" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </section>
+    <section class="section" id="about">
+        <h2 class="section-header">About Me</h2>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpeg" alt="About Image">
+            </div>
+            <div class="about-col-2">
+                <p class="profile-text">Greetings, curious minds! This is a sanctuary for exploration, growth, and the unwavering pursuit of knowledge. 
+                Here, we delve into the intricacies of life, learning, and self-discovery. Join me on this intellectual adventure as we 
+                navigate the vast landscapes of personal development, embracing the beauty of continuous evolution. I am Punit Shah, 
+                your guide on this odyssey of ideas and insights. With a passion for unraveling the mysteries of personal development, 
+                I share my reflections, lessons learned, and the profound discoveries that shape my journey.</p></div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <h2 class="section-header">My Blogs</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://learnwithpunit.substack.com/p/embarking-on-the-cloud-journey-a" class="card-link">
+                    <div class="card">
+                        <img src="blog1.webp" alt="Project 1">
+                        <div class="card-body">
+                            <h5>Embarking on the Cloud Journey: A Business Analyst's Exploration of AWS and Beyond</h5>
+                        </div>
                     </div>
+                </a>
                 </div>
-                <div class="footer-section contact-info">
-                    <h2>Contact Me</h2>
-                    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">your-profile</a></p>
+                <div class="carousel-item">
+                    <a href="https://learnwithpunit.substack.com/p/unlocking-the-business-advantage" class="card-link">
+                        <div class="card">
+                            <img src="blog2.webp" alt="Project 1">
+                            <div class="card-body">
+                                <h5>Unlocking the Business Advantage: The Hidden Power of Economists in Corporate Decision-Making</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://learnwithpunit.substack.com/p/navigating-lifes-journey-balancing" class="card-link">
+                    <div class="card">
+                        <img src="blog3.webp" alt="Project 3">
+                        <div class="card-body">
+                            <h5>Navigating Life's Journey: Balancing Daily Tasks and Long-Term Growth</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <button class="carousel-control prev" role="button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control next" role="button">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+    <div class="section" id="contact">
+        <h2 class="section-header">Contact Me</h2>
+        <footer class="footer">
+            <div class="container">
+                <div class="contact-row">
+                    <div class="contact-left">
+                        <a href="mailto:punitshah06@gmail.com" class="card-link">
+                        <p><i class="fas fa-envelope"></i> punitshah06@gmail.com</p>
+                    </a>
+                        <div class="social-icons">
+                            <a href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                            <a href="#!" role="button"><i class="fab fa-google"></i></a>
+                            <a href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                            <a href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#!" role="button"><i class="fab fa-github"></i></a>
+                        </div>
+                        <!-- <a href="" class="btn btn2">Download Resume</a> -->
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+                <p>&copy; 2024 Punit Shah. All Rights Reserved.</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
+

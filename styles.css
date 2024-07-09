@@ -1,0 +1,602 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: #fff;
+}
+
+.logo {
+    width: auto;
+    height: 60px; /* Adjust height as needed */
+    margin-left: 20px;
+}
+
+
+.section-header {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FF7F00;
+    margin: 0.5rem auto;
+}
+
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#intro {
+    color: #fff;
+    height: 100vh;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#intro h1 {
+    font-size: 3rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#intro p {
+    font-size: 2.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+/* Animations
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+}
+
+.hero .profile-pic {
+    border-radius: 10%;
+    /* max-width: 600px; Adjusted to match size increase */
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.hero .intro-text {
+    max-width: 50%;
+    text-align: left;
+    margin: 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero .dynamic-intro {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .dynamic-text {
+    color: #FF7F00;
+    font-weight: bold;
+}
+
+.hero {
+    text-align:left;
+    margin-top: 3.5rem;
+    max-width: 100%;
+}
+
+.designation{
+    font-style:oblique;
+    font-size: 16px;
+    font:600;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* Footer Styling */
+ /* .footer {
+    background-color: #FF7F00;
+} */
+
+/* .footer .container {
+    max-width: 600px;
+} */
+
+/* .footer .contact-form, .footer .social-media {
+    margin-bottom: 2rem;
+}
+
+.footer .contact-form h2, .footer .social-media h2 {
+    margin-bottom: 1rem;
+}
+
+.footer .form-group {
+    margin-bottom: 1rem;
+}
+
+.footer .form-group input, .footer .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer .form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.footer .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    background-color: #0886c9;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer .btn:hover {
+    background-color: #004d76;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.25rem;  
+}
+.footer .social-links .btn {
+    color: #fff; 
+    padding: 0.75rem;
+    border-radius: 50%;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.footer .social-links .btn:hover {
+    opacity: 0.8;
+}*/
+
+.footer-bottom {
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-top: 30px;
+}  
+
+.footer-bottom p {
+    margin: 0;
+} 
+
+.profile-text {
+    text-align: justify;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 769px) {
+
+    #intro h1 {
+        font-size: 3rem;
+    }
+
+    #intro p {
+        font-size: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        justify-content: center;
+    }
+
+    .hero .profile-pic {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .dynamic-intro {
+        font-size: 1.5rem;
+    }
+
+    .profile-text {
+        text-align: justify;
+        max-width: 100%;
+    }
+    
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 1 0 50%; /* Show 3 items on large screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: #333;
+    /* color: #fff; */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%; /* Adjust width for better fit */
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit:fill; /* Ensure the image covers the entire area while maintaining aspect ratio */
+    
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.card-body h5 {
+    font-size: 1.5rem; /* Increase project title size */
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    font-size: 1.5rem; /* Increase project description size */
+    margin-bottom: 1rem;
+    text-align: center justify;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:visited{
+    color: inherit;
+}
+
+.card-link:hover .card {
+    transform: scale(1.05); /* Optional: Add hover effect for entire card */
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    /* background: rgba(0, 0, 0, 0.5); */
+    border-radius: 60%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control i {
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .carousel-item {
+        flex: 1 0 100%; /* Show 1 item on small screens */
+    }
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FF7F00;
+    color: #fff;
+    /* padding: 1rem 2rem; */
+    font-size: 16px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+@media (max-width:768px){
+    header{
+        font-size: 14px; 
+        padding: 0.5rem 1rem;
+
+    }
+    
+}
+
+header h3 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-active .nav-links {
+        max-height: 200px; /* Adjust as needed */
+    }
+
+}
+
+.btn, .btn2 {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.btn:hover, .btn2:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus effect */
+.btn:focus, .btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a shadow */
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.about-col-1{
+    flex-basis:35% ;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 62%;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-col-1 img{
+        width: 100%;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    
+}
+
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact-left{
+    flex-basis: 40%;
+    margin-left: 20px;
+}
+
+.contact-right{
+    flex-basis: 45%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+    color: white;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform:translateY(-5px)
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: ff004f;
+    margin-top: 30px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+    max-width: 600px;
+    /* margin-left: 80px; */
+}
+
+form .btn2{
+    padding: 14px 16px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .contact-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-right{
+        margin-top: 30px;
+    }
+
+    .social-icons{
+        margin-top: 10px;
+    }
+}
+
+@keyframes CSSscrollReveal{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+ h1,h2,h3,img,p,form {
+    animation: CSSscrollReveal 0.8s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+
+
+
+
+
